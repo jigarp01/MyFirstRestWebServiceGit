@@ -20,6 +20,6 @@ public class MyResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String getIt() {
-        return "Jigar's First Rest API. Got it!";
+        return "Jigar's First Rest API. Changed!";
     }
 }
