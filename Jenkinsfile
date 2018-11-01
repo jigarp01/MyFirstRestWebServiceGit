@@ -10,7 +10,7 @@ pipeline {
             steps {
                 echo "Building .... "
                 echo %JAVA_HOME%
-                set "JAVA_HOME=C:\Program Files (x86)\Java\jdk1.8.0_161"
+                set "JAVA_HOME=C:/Program Files (x86)/Java/jdk1.8.0_161"
                 echo %JAVA_HOME%
                 bat 'mvn clean package'
             }
