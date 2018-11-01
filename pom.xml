@@ -4,13 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.jigarp</groupId>
-    <artifactId>MyFirstRestApi</artifactId>
+    <artifactId>myfirstrestapi</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>MyFirstRestApi</name>
+    <name>myfirstrestapi</name>
 
     <build>
-        <finalName>MyFirstRestApi</finalName>
+        <finalName>myfirstrestapi</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
