@@ -27,6 +27,7 @@ pipeline {
         stage('Deploy to Staging') {
             steps {
                 echo "Deploy to Staging Started... "
+                sh 'ls -ltr /home/ec2-user'
                 sh "scp -i /home/ec2-user/MyEC2NewKP.pem **/target/*.war ec2-user@18.215.243.117:/var/lib/tomcat8/webapps"
             }
         }
