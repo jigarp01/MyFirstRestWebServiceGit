@@ -1,6 +1,9 @@
 pipeline {
     agent any
-
+    
+    tools {
+        maven 'Maven'
+    }
     triggers{
         pollSCM('* * * * *')
     }
@@ -9,7 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building .... "
-                echo $PATH
+                sh 'mvn --version'
                 sh 'mvn clean package'
             }
             post {
