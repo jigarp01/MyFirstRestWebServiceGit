@@ -28,7 +28,7 @@ pipeline {
             steps {
                 echo "Deploy to Staging Started.... "
                 sh 'ls -ltr /home/ec2-user'
-                sh "scp -i /var/lib/jenkins/.ssh/MyEC2NewKP.pem -o StrictHostKeyChecking=no ./target/*.war ec2-user@18.215.243.117:/var/lib/tomcat8/webapps"
+                sh "scp -i /var/lib/jenkins/.ssh/MyEC2NewKP.pem -o StrictHostKeyChecking=no ./target/*.war ec2-user@52.90.215.101:/opt/apache-tomcat-8.5.34/webapps"
             }
         }
     }
